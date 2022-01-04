@@ -12,31 +12,51 @@ img {
 }
 
 p {
-  max-width: 60ch;
+  max-width: 65ch;
   margin-bottom: 20px;
-  line-height: 25px;
-  font-size: 1rem;
+  line-height: 23px;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(63, 42, 42);
+}
+
+a:hover {
+  color: #000000d0;
 }
 
 h1 {
   margin-bottom: 5px;
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .hidden {
-  /*    display: none;*/
-  /*    transform: scale(0);*/
+  /* display: none;
+  transform: scale(0); */
   transform: translateX(-100%);
   opacity: 0;
 }
 
 #menuknap {
   display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 #menu {
   list-style-type: none;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
   transform-origin: top left;
+  margin-left: 20px;
 }
 
 .splash {
@@ -54,6 +74,55 @@ main {
 body {
   background-color: #f7f1f1;
 }
+
+/* D burgermenu */
+/* .toggle-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .menu-icons {
+    width: 100%;
+    height: 100%;
+  }
+
+  .toggle-btn.open .burger,
+  .close {
+    display: none;
+  }
+
+  .toggle-btn.open .close,
+  .burger {
+    display: block;
+  }
+} */
 
 /* Web */
 @media only screen and (min-width: 600px) {
@@ -87,7 +156,6 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 20px;
-    /* position: fixed; */
   }
 
   /* web/tema 2 */
@@ -129,7 +197,7 @@ body {
 }
 
 .button:hover {
-  background: #a17d74a2;
+  background: #a169677c;
 }
 
 .button_text {
@@ -137,6 +205,9 @@ body {
   align-items: center;
   padding: 1px;
   color: #6e4746;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {
