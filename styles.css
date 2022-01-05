@@ -33,10 +33,19 @@ a:hover {
 }
 
 h1 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: open-sans, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 
 .hidden {
@@ -127,7 +136,7 @@ body {
 /* Web */
 @media only screen and (min-width: 600px) {
   img {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 
   #menuknap {
@@ -158,7 +167,7 @@ body {
     padding: 20px;
   }
 
-  /* web/tema 2 */
+  /* Tema 2 - webformat */
 
   #web .section_wrapper {
     display: grid;
@@ -179,6 +188,33 @@ body {
 
   .element_3 {
     grid-column: 2/3;
+  }
+
+  /* Tema 3 - webformat */
+  #ux #first_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  #ux #second_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    margin-bottom: 100px;
+  }
+
+  #ux #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  #ux img {
+    margin-bottom: 20px;
   }
 }
 
