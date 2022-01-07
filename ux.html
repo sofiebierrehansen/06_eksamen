@@ -16,10 +16,11 @@
     <title>UX</title>
   </head>
   <body>
-    <header>
+    <header class="banner">
+      <button class="toggle-btn">☰</button>
+
       <nav>
-        <div id="menuknap">☰</div>
-        <ul id="menu" class="hidden">
+        <ul>
           <li><a href="index.html">Forside</a></li>
           <li><a href="web.html">Web</a></li>
           <li><a href="ux.html">UX</a></li>
@@ -61,7 +62,11 @@
             </p>
             <button type="button" class="button">
               <span class="button_items">
-                <span class="button_text">Gå til prototypen</span>
+                <a
+                  href="https://xd.adobe.com/view/d9031757-ebeb-4a11-991e-da25f1bfba4e-8c50/?fullscreen&hints=off"
+                >
+                  <span class="button_text">Gå til prototypen</span></a
+                >
               </span>
             </button>
             <button type="button" class="button">
@@ -119,6 +124,33 @@
         </div>
       </section>
     </main>
+    <footer>
+      <section class="section_wrapper">
+        <div class="col_txt">
+          <p>
+            Sofie Bierre Hansen <br />
+            1. semester portfolio eksamen <br />
+            Multimediedesigner, <br />
+            Københavs Erhvervsakademi
+          </p>
+        </div>
+        <div class="col_icon">
+          <div class="instagram">
+            <a href="https://www.instagram.com/sofiebierre/">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </div>
+          <div class="facebook">
+            <a href="https://www.facebook.com/sofie.bierrehansen">
+              <i class="fab fa-facebook-square fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col_billede">
+          <img src="billeder/portraet2.jpg" alt="portræt" />
+        </div>
+      </section>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

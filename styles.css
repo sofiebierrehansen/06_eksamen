@@ -8,13 +8,13 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 p {
   max-width: 65ch;
-  margin-bottom: 20px;
-  line-height: 23px;
+  margin-bottom: 1.25rem;
+  line-height: 1.4rem;
   font-family: open-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -29,11 +29,11 @@ a {
 }
 
 a:hover {
-  color: #000000d0;
+  color: rgb(151, 104, 104);
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
   font-family: open-sans, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -41,31 +41,11 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-family: open-sans, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.2rem;
-}
-
-.hidden {
-  /* display: none;
-  transform: scale(0); */
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-#menuknap {
-  display: inline-block;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-#menu {
-  list-style-type: none;
-  transition: transform 0.5s;
-  transform-origin: top left;
-  margin-left: 20px;
 }
 
 .splash {
@@ -76,8 +56,16 @@ h2 {
   place-content: center;
 }
 
-main {
-  margin: 20px;
+#forside .second_section {
+  margin: 1.25rem;
+}
+
+#web,
+#ux,
+#animation,
+#content,
+#om {
+  margin: 1.25rem;
 }
 
 body {
@@ -90,22 +78,22 @@ footer {
 footer .col_billede {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 footer img {
-  width: 60%;
+  width: 50%;
   clip-path: circle(50% at 50% 50%);
 }
 
 footer .section_wrapper {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
 }
 
 footer p {
   color: #6e4746;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .col_txt {
@@ -115,15 +103,12 @@ footer p {
 
 .col_icon {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
-/* D burgermenu */
-/* .toggle-btn {
-  display: none;
-}
+/* burgermenu */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .toggle-btn {
     background: transparent;
     border: none;
@@ -132,6 +117,8 @@ footer p {
     height: 44px;
     padding: 0.25rem;
     cursor: pointer;
+    color: rgb(63, 42, 42);
+    font-size: 1.5rem;
   }
 
   nav {
@@ -139,7 +126,7 @@ footer p {
   }
 
   nav.shown {
-    border-top: 1px solid #000;
+    border-top: 1px solid rgb(63, 42, 42);
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -149,37 +136,30 @@ footer p {
   nav ul {
     display: flex;
     flex-flow: column;
+    list-style: none;
+    margin: 1.4rem;
+    gap: 1rem;
   }
-
-  .menu-icons {
-    width: 100%;
-    height: 100%;
-  }
-
-  .toggle-btn.open .burger,
-  .close {
-    display: none;
-  }
-
-  .toggle-btn.open .close,
-  .burger {
-    display: block;
-  }
-} */
+}
 
 /* Web */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   img {
     margin-bottom: 0px;
   }
 
-  #menuknap {
-    display: none;
+  .banner {
+    background-color: #c28383;
+    padding: 1rem;
   }
 
-  #menu.hidden {
-    transform: translateX(0);
-    opacity: 1;
+  .banner ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .toggle-btn {
+    display: none;
   }
 
   #menu li {
@@ -189,7 +169,6 @@ footer p {
   header {
     position: sticky;
     top: 0;
-    background: #c28383;
   }
 
   header nav ul {
@@ -197,36 +176,30 @@ footer p {
     list-style: none;
     text-align: center;
     justify-content: center;
-    gap: 40px;
-    padding: 20px;
+    gap: 2.5rem;
+    padding: 0.5rem;
   }
 
   footer {
     background-color: #a169677c;
   }
 
-  /* footer .col_billede {
-    display: grid;
-    grid-column: 3/4;
-    margin-top: 20px;
-  } */
-
   footer img {
-    width: 60%;
+    width: 65%;
     clip-path: circle(50% at 50% 50%);
   }
 
   footer .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    gap: 1.25rem;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
   }
 
   footer p {
     color: #6e4746;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   .col_txt {
@@ -236,6 +209,7 @@ footer p {
   .col_icon {
     grid-column: 2/4;
     grid-row: 2/2;
+    margin-bottom: 1.25rem;
   }
 
   .col_billede {
@@ -244,17 +218,16 @@ footer p {
   }
 
   /* Tema 2 - webformat */
-
   #web .section_wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 30px;
+    gap: 1.9rem;
   }
   .col_wide {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
-    gap: 30px;
+    gap: 1.9rem;
   }
 
   .element_2 {
@@ -270,27 +243,27 @@ footer p {
   #ux #first_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 50px;
+    gap: 1.9rem;
+    margin-bottom: 3.1rem;
   }
 
   #ux #second_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 1.9rem;
     /* margin-left: 100px;
     margin-right: 100px; */
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
 
   #ux #third_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 1.9rem;
   }
 
   #ux img {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -298,8 +271,8 @@ footer p {
 
 .button {
   place-content: center;
-  border-radius: 4px;
-  margin-bottom: 20px;
+  border-radius: 0.25rem;
+  margin-bottom: 1.25rem;
   /* grid-column: 1/1; */
 }
 
@@ -315,7 +288,7 @@ footer p {
 .button_text {
   display: flex;
   align-items: center;
-  padding: 1px;
+  padding: 0.06rem;
   color: #6e4746;
   font-family: open-sans, sans-serif;
   font-weight: 400;
@@ -324,7 +297,8 @@ footer p {
 
 button {
   width: 100%;
-  padding: 15px 0 15px 0;
+  padding: 0.9rem 0 0.9rem 0;
   border: none;
   background-color: white;
+  margin-bottom: 1.5rem;
 }

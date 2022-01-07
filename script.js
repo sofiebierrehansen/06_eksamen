@@ -1,42 +1,22 @@
-window.addEventListener("load", sidenVises);
+// Dannies burger
 
-function sidenVises() {
-  console.log("sidenVises");
-  document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-}
+const btn = document.querySelector(".toggle-btn");
+const nav = document.querySelector("nav");
 
 function toggleMenu() {
-  console.log("toggleMenu");
-  document.querySelector("#menu").classList.toggle("hidden");
+  nav.classList.toggle("shown");
 
-  let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+  const menu = nav.classList.contains("shown");
 
-  if (erSkjult == true) {
-    document.querySelector("#menuknap").textContent = "☰";
+  if (menu) {
+    // hvis ul har klassen "shown"
+    btn.textContent = "X";
+    // btn.classList.add("open");
   } else {
-    document.querySelector("#menuknap").textContent = "X";
+    // hvis IKKE ul har klassen "shown"
+    btn.textContent = "☰";
+    // btn.classList.remove("open");
   }
 }
 
-// Dannies burger
-
-// const btn = document.querySelector("button");
-// const ul = document.querySelector("nav");
-
-// function toggleMenu() {
-//   ul.classList.toggle("shown");
-
-//   const menu = ul.classList.contains("shown");
-
-//   if (menu) {
-//     // hvis ul har klassen "shown"
-//     //btn.textContent = "Luk";
-//     btn.classList.add("open");
-//   } else {
-//     // hvis IKKE ul har klassen "shown"
-//     //btn.textContent = "Menu";
-//     btn.classList.remove("open");
-//   }
-// }
-
-// btn.addEventListener("click", toggleMenu);
+btn.addEventListener("click", toggleMenu);
