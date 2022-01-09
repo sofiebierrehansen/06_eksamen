@@ -47,39 +47,48 @@ hr {
 
 h1 {
   margin-bottom: 0.7rem;
-  font-family: open-sans, sans-serif;
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: rgb(46, 46, 46);
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+  font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.6rem;
   color: rgb(46, 46, 46);
 }
 
-h2 {
-  margin-bottom: 1.25rem;
-
-  font-family: open-sans, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.2rem;
-  color: rgb(46, 46, 46);
-}
-
 h3 {
   margin-bottom: 1rem;
-
-  font-family: open-sans, sans-serif;
+  font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgb(46, 46, 46);
 }
 
-.splash {
-  background-image: url(billeder/skyer.jpg);
+#forside #first_section {
+  display: grid;
+  background-image: url(billeder/nature.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
   place-content: center;
+}
+
+#forside #first_section h1 {
+  font-size: 2.6rem;
+  color: rgb(75, 56, 100);
+}
+
+#forside #first_section h2 {
+  font-size: 2.2rem;
+  color: rgb(75, 56, 100);
 }
 
 #forside .second_section {
@@ -140,8 +149,8 @@ footer p {
     background: transparent;
     border: none;
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 2.75rem;
+    height: 2.75rem;
     padding: 0.25rem;
     cursor: pointer;
     color: rgb(63, 42, 42);
@@ -153,7 +162,7 @@ footer p {
   }
 
   nav.shown {
-    border-top: 1px solid rgb(63, 42, 42);
+    border-top: 0.1rem solid #a169677c;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -172,22 +181,22 @@ footer p {
 /* Web */
 @media only screen and (min-width: 800px) {
   img {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 
   h1 {
     margin-bottom: 0.7rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h2 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   h3 {
     margin-bottom: 1.25rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .banner {
@@ -259,6 +268,23 @@ footer p {
     grid-row: 1/2;
   }
 
+  /* Forside - webformat */
+  #forside #first_section {
+    background-image: url(billeder/nature.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    place-content: center;
+  }
+
+  #forside #first_section h1 {
+    font-size: 4rem;
+  }
+
+  #forside #first_section h2 {
+    font-size: 3rem;
+  }
+
   /* Tema 2 - webformat */
   #web .section_wrapper {
     display: grid;
@@ -284,7 +310,8 @@ footer p {
   /* Tema 3 - webformat (first- og second_section tema 5)*/
   #ux #first_section .section_wrapper,
   #content #first_section .section_wrapper,
-  #content #second_section .section_wrapper {
+  #content #second_section .section_wrapper,
+  #portfolio #first_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.9rem;
@@ -342,9 +369,8 @@ footer p {
 
   #content #fourth_section .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 5, 1fr;
     grid-template-rows: 1fr 1fr;
-
     margin-bottom: 3rem;
   }
 
@@ -370,6 +396,15 @@ footer p {
   .vaerksted {
     grid-column: 5/5;
     grid-row: 1/1;
+  }
+
+  /* Tema 6 - webformat */
+  #portfolio #second_section .section_wrapper,
+  #portfolio #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
 }
 
