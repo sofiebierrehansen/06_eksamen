@@ -388,7 +388,7 @@ footer p {
 
   #content #fourth_section .section_wrapper {
     display: grid;
-    grid-template-columns: 5, 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 3rem;
   }
@@ -442,7 +442,6 @@ footer p {
 
   #om #second_section .section_wrapper {
     display: grid;
-    place-items: left;
     list-style: none;
   }
 
