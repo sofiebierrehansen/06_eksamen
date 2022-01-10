@@ -288,27 +288,17 @@ footer p {
   /* Tema 2 - webformat */
   #web .section_wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.9rem;
-  }
-  .col_wide {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.9rem;
   }
 
-  .element_2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  #web img {
+    margin-bottom: 1rem;
   }
 
-  .element_3 {
-    grid-column: 2/3;
-  }
-
-  /* Tema 3 - webformat (first- og second_section tema 5)*/
+  /* Tema 3 - webformat (og andre temaer)*/
   #ux #first_section .section_wrapper,
+  #ux #fifth_section .section_wrapper,
   #content #first_section .section_wrapper,
   #content #second_section .section_wrapper,
   #portfolio #first_section .section_wrapper {
@@ -322,14 +312,19 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.9rem;
-    /* margin-left: 100px;
-    margin-right: 100px; */
     margin-bottom: 6.25rem;
   }
 
   #ux #third_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.9rem;
+    margin-bottom: 2rem;
+  }
+
+  #ux #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1.9rem;
     margin-bottom: 2rem;
   }
