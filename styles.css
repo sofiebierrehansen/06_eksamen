@@ -440,6 +440,10 @@ footer p {
     margin-bottom: 3rem;
   }
 
+  #om #first_section .section_wrapper p {
+    grid-column: 2/2;
+  }
+
   #om #second_section .section_wrapper {
     display: grid;
     list-style: none;
