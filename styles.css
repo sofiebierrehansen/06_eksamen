@@ -17,6 +17,19 @@ iframe {
   aspect-ratio: 16/9;
 }
 
+.logo a {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-family: look-script, serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(75, 56, 100);
+  margin: 0.5rem;
+}
+
 p,
 li {
   max-width: 75ch;
@@ -228,16 +241,12 @@ footer p {
     flex-flow: column;
     list-style: none;
     margin: 1.4rem;
-    gap: 1rem;
+    gap: 0.2rem;
   }
 }
 
 /* Web */
 @media only screen and (min-width: 800px) {
-  img {
-    margin-bottom: 0rem;
-  }
-
   h1 {
     margin-bottom: 0.7rem;
     font-size: 2.4rem;
@@ -251,6 +260,10 @@ footer p {
   h3 {
     margin-bottom: 1.6rem;
     font-size: 1.6rem;
+  }
+
+  .logo a {
+    display: none;
   }
 
   .banner {
