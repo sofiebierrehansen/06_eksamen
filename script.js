@@ -1,4 +1,4 @@
-// Dannies burger
+// Burgermenu
 
 const btn = document.querySelector(".toggle-btn");
 const nav = document.querySelector("nav");

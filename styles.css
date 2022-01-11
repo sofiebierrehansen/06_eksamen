@@ -19,7 +19,7 @@ iframe {
 
 p,
 li {
-  max-width: 60ch;
+  max-width: 75ch;
   margin-bottom: 1.25rem;
   line-height: 1.4rem;
   font-family: open-sans, sans-serif;
@@ -47,17 +47,17 @@ hr {
 }
 
 h1 {
-  margin-bottom: 0.7rem;
-  font-family: playfair-display, serif;
+  margin-bottom: 0.5rem;
+  font-family: look-script, serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: rgb(46, 46, 46);
 }
 
 h2 {
   margin-bottom: 1.25rem;
-  font-family: playfair-display, serif;
+  font-family: look-script, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.6rem;
@@ -66,11 +66,31 @@ h2 {
 
 h3 {
   margin-bottom: 1rem;
-  font-family: playfair-display, serif;
+  font-family: look-script, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.4rem;
   color: rgb(46, 46, 46);
+}
+
+/* Knapper */
+
+.button {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  place-content: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  display: inline-flex;
+  width: 100%;
+  padding: 0.9rem 0 0.9rem 0;
+  background-color: white;
+  color: #6e4746;
+}
+
+.button:hover {
+  background: #a169677c;
 }
 
 #forside #first_section {
@@ -82,14 +102,24 @@ h3 {
   place-content: center;
 }
 
+#forside #first_section .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 #forside #first_section h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: rgb(75, 56, 100);
+  grid-column: 1/5;
+  grid-row: 1/4;
 }
 
 #forside #first_section h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: rgb(75, 56, 100);
+  grid-column: 2/4;
+  grid-row: 2/4;
 }
 
 #forside .second_section {
@@ -210,16 +240,16 @@ footer p {
 
   h1 {
     margin-bottom: 0.7rem;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   h2 {
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h3 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.6rem;
     font-size: 1.6rem;
   }
 
@@ -300,13 +330,22 @@ footer p {
     background-size: cover;
     place-content: center;
   }
+  #forside #first_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 
   #forside #first_section h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
+    grid-column: 1/4;
+    grid-row: 1/3;
   }
 
   #forside #first_section h2 {
     font-size: 3rem;
+    grid-column: 2/4;
+    grid-row: 2/3;
   }
 
   /* Tema 2 - webformat */
@@ -458,39 +497,4 @@ footer p {
   #om #second_section .section_wrapper h3 {
     margin-bottom: 0.5rem;
   }
-}
-
-/* Knapper */
-
-.button {
-  place-content: center;
-  border-radius: 0.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.button_items {
-  display: inline-flex;
-  overflow: hidden;
-}
-
-.button:hover {
-  background: #a169677c;
-}
-
-.button_text {
-  display: flex;
-  align-items: center;
-  padding: 0.06rem;
-  color: #6e4746;
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-button {
-  width: 100%;
-  padding: 0.9rem 0 0.9rem 0;
-  border: none;
-  background-color: white;
-  margin-bottom: 1.5rem;
 }
