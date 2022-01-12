@@ -424,8 +424,8 @@ footer p {
   }
 
   #animation .third_section .section_wrapper .row {
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 1.4rem;
   }
