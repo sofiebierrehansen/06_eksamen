@@ -432,8 +432,8 @@ footer p {
 
   /* Tema 5 - webformat */
   #content #third_section .section_wrapper {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
   }
